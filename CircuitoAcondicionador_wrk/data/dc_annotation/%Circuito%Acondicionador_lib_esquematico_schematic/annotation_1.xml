@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DCOPData Simulator="hpeesofsim" Time="do. feb. 25 23:39:18 2018" Version="1.0">
+ <Controller name="SP1">
+  <SweepCondition>
+   <P>freq: 1.0000000000000000e+09</P>
+  </SweepCondition>
+  <DC_OPDeclaration/>
+  <DC_Voltages>
+   <V>0: 0.0000000000000000e+00</V>
+   <V>AMP1._net109: 0.0000000000000000e+00</V>
+   <V>AMP1._net111: 0.0000000000000000e+00</V>
+   <V>AMP1._net112: 0.0000000000000000e+00</V>
+   <V>AMP1._net3: 0.0000000000000000e+00</V>
+   <V>N__23: 0.0000000000000000e+00</V>
+   <V>N__9: 0.0000000000000000e+00</V>
+   <GV>0: 0.0000000000000000e+00</GV>
+  </DC_Voltages>
+  <DC_PinCurrents>
+   <I>AMP1: 0.0000000000000000e+00, 0.0000000000000000e+00, 0.0000000000000000e+00</I>
+   <I>C1: 0.0000000000000000e+00, 0.0000000000000000e+00</I>
+   <I>R1: 0.0000000000000000e+00, 0.0000000000000000e+00</I>
+   <I>TermG1: 0.0000000000000000e+00, 0.0000000000000000e+00</I>
+   <I>TermG2: 0.0000000000000000e+00, 0.0000000000000000e+00</I>
+  </DC_PinCurrents>
+  <DC_OPInstances/>
+ </Controller>
+</DCOPData>

@@ -1,0 +1,24 @@
+; Top Design: "CircuitoAcondicionador_lib:esquematico:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="CircuitoAcondicionador_lib:esquematico:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+#uselib "sml" , "OpAmp"
+OpAmp:AMP1  N__23 N__9 0 Gain=100 dB Rout=100 Ohm RDiff=1 MOhm CDiff=0 F RCom=1 MOhm CCom=0 F SlewRate=1e+6 IOS=0 A VOS=0 V BW=1 MHz Inoise=0 Vnoise=0 VEE=-15 V VCC=15 V DeltaVEE=0.3 V DeltaVCC=0.3 V 
+C:C1  N__23 N__9 C=1.0 pF 
+R:R1  N__23 N__9 R=50 Ohm Noise=yes 
+Port:TermG1  N__23 0 Num=1 Z=50 Ohm Noise=yes 
+Port:TermG2  N__9 0 Num=2 Z=50 Ohm Noise=yes 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=1.0 GHz Stop=10.0 GHz Step=10 MHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
