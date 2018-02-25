@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      Nolito
+HostName                       Nolito
+ProcessIdentifier              4964
+ProcessCreationTime_UTC        1519563255
+ProcessCreationTime_Readable   Sun Feb 25 13:54:15 2018 Hora estándar romance
+AppIdentifier                  OA File System Design Manager
+OSType                         win32
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         C:\Users\Nolito\MyFirstWorkspace_wrk\MyFirstWorkspace_lib\tech.db.cdslck
+TimeEditLocked                 Sun Feb 25 13:56:21 2018 Hora estándar romance
