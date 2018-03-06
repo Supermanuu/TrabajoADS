@@ -1,5 +1,7 @@
 <!DOCTYPE SaveWorkspaceState>
 <SaveWorkspaceState>
-    <Windows/>
+    <Windows>
+        <Schematic view="schematic" cell="prueba_1_cable" height="832" x1="38" lib="CircuitoAcondicionador_lib" y1="38" width="1536"/>
+    </Windows>
     <MainWindowTab tab="1"/>
 </SaveWorkspaceState>
