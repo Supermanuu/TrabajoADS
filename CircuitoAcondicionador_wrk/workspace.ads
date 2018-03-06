@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="1" Version="100">
+<ADSWorkspace Revision="8" Version="100">
     <Workspace Name="">
         <Library Name="ads_standard_layers_ic" />
         <Library Name="ads_schematic_layers_ic" />
@@ -65,5 +65,16 @@
         <LibraryDefs Name="lib.defs" />
         <ConfigFile Name="de_sim.cfg" />
         <ConfigFile Name="hpeesofsim.cfg" />
+        <ConfigFile Name="dds.cfg" />
+        <Cell Name="CircuitoAcondicionador_lib:prueba_1_cable" />
+        <Dataset Name="prueba_1_cable.ds" />
+        <Cell Name="CircuitoAcondicionador_lib:prueba_2_cables" />
+        <Dataset Name="prueba_2_cables.ds" />
+        <Data_Display Name="prueba_2_cables.dds" />
+        <Data_Display Name="prueba_1_cable.dds" />
+        <Cell Name="CircuitoAcondicionador_lib:prueba_1_cable_rutado_corto" />
+        <Cell Name="CircuitoAcondicionador_lib:prueba_1_cable_rutado_largo" />
+        <Cell Name="CircuitoAcondicionador_lib:prueba_2_cables_rutado_corto" />
+        <Cell Name="CircuitoAcondicionador_lib:prueba_2_cables_rutado_largo" />
     </Workspace>
 </ADSWorkspace>

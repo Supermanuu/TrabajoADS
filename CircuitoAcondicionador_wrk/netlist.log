@@ -1,56 +1,15 @@
-; Top Design: "CircuitoAcondicionador_lib:esquematico:schematic"
+; Top Design: "CircuitoAcondicionador_lib:prueba_2_cables:schematic"
 ; Netlisted using Hierarchy Policy: "Standard"
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="CircuitoAcondicionador_lib:esquematico:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
-#uselib "sml" , "OpAmp"
-OpAmp:AMP1  N__80 intermediate1 0 Gain=100 dB Rout=100 Ohm RDiff=1 MOhm CDiff=0 F RCom=1 MOhm CCom=0 F SlewRate=1e+6 IOS=0 A VOS=0 V BW=1 MHz Inoise=0 Vnoise=0 VEE=-15 V VCC=15 V DeltaVEE=0.3 V DeltaVCC=0.3 V 
-#uselib "sml" , "OpAmp"
-OpAmp:AMP2  N__46 Ouput1 0 Gain=100 dB Rout=100 Ohm RDiff=1 MOhm CDiff=0 F RCom=1 MOhm CCom=0 F SlewRate=1e+6 IOS=0 A VOS=0 V BW=1 MHz Inoise=0 Vnoise=0 VEE=-15 V VCC=15 V DeltaVEE=0.3 V DeltaVCC=0.3 V 
-R:R1  N__80 intermediate1 R=50 Ohm Noise=yes 
-R:R2  N__46 Ouput1 R=50 Ohm Noise=yes 
-R:R12  intermediate1 N__46 R=50 Ohm Noise=yes 
-R:R13  Ouput1 N__71 R=50 Ohm Noise=yes 
-V_Source:SRC5  Input 0 Type="V_DC" Vdc=1.0 V SaveCurrent=1 
-Short:output_current_1  N__71 0 Mode=0 SaveCurrent=yes 
-Short:input_current_1  N__6 N__80 Mode=0 SaveCurrent=yes 
-Short:output_current_2  N__83 0 Mode=0 SaveCurrent=yes 
-Short:input_current_2  N__72 N__86 Mode=0 SaveCurrent=yes 
-R:R14  N__84 Ouput2 R=50 Ohm Noise=yes 
-R:R15  N__86 intermediate2 R=50 Ohm Noise=yes 
-R:R16  intermediate2 N__84 R=50 Ohm Noise=yes 
-R:R17  Ouput2 N__83 R=(10K) Ohm Noise=yes 
-#uselib "sml" , "OpAmp"
-OpAmp:AMP3  N__84 Ouput2 0 Gain=100 dB Rout=100 Ohm RDiff=1 MOhm CDiff=0 F RCom=1 MOhm CCom=0 F SlewRate=1e+6 IOS=0 A VOS=0 V BW=1 MHz Inoise=0 Vnoise=0 VEE=-15 V VCC=15 V DeltaVEE=0.3 V DeltaVCC=0.3 V 
-#uselib "sml" , "OpAmp"
-OpAmp:AMP4  N__86 intermediate2 0 Gain=100 dB Rout=100 Ohm RDiff=1 MOhm CDiff=0 F RCom=1 MOhm CCom=0 F SlewRate=1e+6 IOS=0 A VOS=0 V BW=1 MHz Inoise=0 Vnoise=0 VEE=-15 V VCC=15 V DeltaVEE=0.3 V DeltaVCC=0.3 V 
-Short:output_current_3  N__55 0 Mode=0 SaveCurrent=yes 
-Short:input_current_3  N__77 N__75 Mode=0 SaveCurrent=yes 
-R:R18  N__69 Ouput3 R=50 Ohm Noise=yes 
-R:R19  N__75 intermediate3 R=50 Ohm Noise=yes 
-R:R20  intermediate3 N__69 R=50 Ohm Noise=yes 
-R:R21  Ouput3 N__55 R=50 Ohm Noise=yes 
-#uselib "sml" , "OpAmp"
-OpAmp:AMP5  N__69 Ouput3 0 Gain=100 dB Rout=100 Ohm RDiff=1 MOhm CDiff=0 F RCom=1 MOhm CCom=0 F SlewRate=1e+6 IOS=0 A VOS=0 V BW=1 MHz Inoise=0 Vnoise=0 VEE=-15 V VCC=15 V DeltaVEE=0.3 V DeltaVCC=0.3 V 
-#uselib "sml" , "OpAmp"
-OpAmp:AMP6  N__75 intermediate3 0 Gain=100 dB Rout=100 Ohm RDiff=1 MOhm CDiff=0 F RCom=1 MOhm CCom=0 F SlewRate=1e+6 IOS=0 A VOS=0 V BW=1 MHz Inoise=0 Vnoise=0 VEE=-15 V VCC=15 V DeltaVEE=0.3 V DeltaVCC=0.3 V 
-Short:output_current_4  N__65 0 Mode=0 SaveCurrent=yes 
-Short:input_current_4  N__40 N__41 Mode=0 SaveCurrent=yes 
-R:R22  N__17 Ouput4 R=50 Ohm Noise=yes 
-R:R23  N__41 intermediate4 R=50 Ohm Noise=yes 
-R:R24  intermediate4 N__17 R=50 Ohm Noise=yes 
-R:R25  Ouput4 N__65 R=50 Ohm Noise=yes 
-#uselib "sml" , "OpAmp"
-OpAmp:AMP7  N__17 Ouput4 0 Gain=100 dB Rout=100 Ohm RDiff=1 MOhm CDiff=0 F RCom=1 MOhm CCom=0 F SlewRate=1e+6 IOS=0 A VOS=0 V BW=1 MHz Inoise=0 Vnoise=0 VEE=-15 V VCC=15 V DeltaVEE=0.3 V DeltaVCC=0.3 V 
-#uselib "sml" , "OpAmp"
-OpAmp:AMP8  N__41 intermediate4 0 Gain=100 dB Rout=100 Ohm RDiff=1 MOhm CDiff=0 F RCom=1 MOhm CCom=0 F SlewRate=1e+6 IOS=0 A VOS=0 V BW=1 MHz Inoise=0 Vnoise=0 VEE=-15 V VCC=15 V DeltaVEE=0.3 V DeltaVCC=0.3 V 
-I_Source:SRC9  Input N__6 Type="I_DC" Idc=100 mA 
-I_Source:SRC10  Input N__72 Type="I_DC" Idc=200 mA 
-I_Source:SRC11  Input N__77 Type="I_DC" Idc=300 mA 
-I_Source:SRC12  Input N__40 Type="I_DC" Idc=400 mA 
-DC:DC1 StatusLevel=2 DevOpPtLevel=0 UseFiniteDiff=no PrintOpPoint=no Restart=1 \
-OutputPlan="DC1_Output" 
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="CircuitoAcondicionador_lib:prueba_2_cables:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+V_Source:SRC1  v1 0 Type="V_AC" Vdc=0.0 V Vac=1V Freq=100 MHz V_Noise=0 uV SaveCurrent=1 
+R:R1  v1 N__0 R=50 Ohm Noise=yes 
+AC:AC1 CalcNoise=no SortNoise=0 IncludePortNoise=yes BandwidthForNoise=1 Hz FreqConversion=no UseFiniteDiff=no StatusLevel=2 OutputBudgetIV=no DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="AC1_stim" OutputPlan="AC1_Output" 
 
-OutputPlan:DC1_Output \
+SweepPlan: AC1_stim Start=10 MHz Stop=10.0 GHz Step=10 MHz 
+
+OutputPlan:AC1_Output \
       Type="Output" \
       UseNodeNestLevel=yes \
       NodeNestLevel=2 \
@@ -68,3 +27,7 @@ OutputPlan:DC1_Output \
       DeviceVoltageNestLevel=0 \
       DeviceVoltageDeviceType="All"
 
+Short:c1  N__0 0 Mode=0 SaveCurrent=yes 
+V_Source:SRC2  v2 0 Type="V_AC" Vdc=0.0 V Vac=1V Freq=100 MHz V_Noise=0 uV SaveCurrent=1 
+R:R2  v2 N__3 R=50 Ohm Noise=yes 
+Short:c2  N__3 0 Mode=0 SaveCurrent=yes 
